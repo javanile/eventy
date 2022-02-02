@@ -1,20 +1,20 @@
 <?php
 
-namespace TorMorten\Eventy;
+namespace Javanile\Eventy;
 
 class Events
 {
     /**
      * Holds all registered actions.
      *
-     * @var TorMorten\Events\Action
+     * @var Javanile\Events\Action
      */
     protected $action;
 
     /**
      * Holds all registered filters.
      *
-     * @var TorMorten\Events\Filter
+     * @var Javanile\Events\Filter
      */
     protected $filter;
 
@@ -30,7 +30,7 @@ class Events
     /**
      * Get the action instance.
      *
-     * @return TorMorten\Events\Action
+     * @return Javanile\Events\Action
      */
     public function getAction()
     {
@@ -40,7 +40,7 @@ class Events
     /**
      * Get the action instance.
      *
-     * @return TorMorten\Events\Filter
+     * @return Javanile\Events\Filter
      */
     public function getFilter()
     {

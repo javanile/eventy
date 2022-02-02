@@ -45,14 +45,14 @@ If you're using Laravel 5.5 or later you can start using the package at this poi
 2. Add the service provider to the providers array in your `config/app.php`.
 
 ```php
-    'TorMorten\Eventy\EventServiceProvider',
-    'TorMorten\Eventy\EventBladeServiceProvider',
+    'Javanile\Eventy\EventServiceProvider',
+    'Javanile\Eventy\EventBladeServiceProvider',
 ```
 
 3. Add the facade in `config/app.php`
 
 ```php
-    'Eventy' => TorMorten\Eventy\Facades\Events::class,
+    'Eventy' => Javanile\Eventy\Facades\Events::class,
 ```
 
 
@@ -63,7 +63,7 @@ If you're using Laravel 5.5 or later you can start using the package at this poi
 Anywhere in your code you can create a new action like so:
 
 ```php
-use TorMorten\Eventy\Facades\Events as Eventy;
+use Javanile\Eventy\Facades\Events as Eventy;
 
 Eventy::action('my.hook', $user);
 ```
@@ -152,7 +152,7 @@ class PostsQueryBuilder
 Using Eventy I can offer a filter for other plugins to hook in to this:
 
 ```php
-use TorMorten\Eventy\Facades\Events as Eventy;
+use Javanile\Eventy\Facades\Events as Eventy;
 class PostsQueryBuilder
 {
     public function query()
@@ -167,7 +167,7 @@ Then, Plugin B comes along a needs to modify said query in other to only include
 
 In Plugin B's service provider (preferably in the boot method, since it will always be fired after Eventy has been made available) we'll add a listener for the event.
 ```php
-use TorMorten\Eventy\Facades\Events as Eventy;
+use Javanile\Eventy\Facades\Events as Eventy;
 
 class PluginBServiceProvider extends ServiceProvider
 {
@@ -196,7 +196,7 @@ This would allow for your plugins/controllers to hook into each blog post footer
 
 In this example a share link is added.
 ```php
-use TorMorten\Eventy\Facades\Events as Eventy;
+use Javanile\Eventy\Facades\Events as Eventy;
 class SharePostsController
 {
     public function boot()
@@ -211,7 +211,7 @@ class SharePostsController
 
 In this example a comment count is added.
 ```php
-use TorMorten\Eventy\Facades\Events as Eventy;
+use Javanile\Eventy\Facades\Events as Eventy;
 class CommentsPostsController
 {
     public function boot()

@@ -1,6 +1,6 @@
 <?php
 
-namespace TorMorten\Eventy;
+namespace Javanile\Eventy;
 
 use Illuminate\Support\Facades\Blade;
 use Illuminate\Support\ServiceProvider;

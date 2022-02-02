@@ -33,7 +33,7 @@
   },
   "autoload": {
     "psr-4": {
-      "TorMorten\\Eventy\\": "src/"
+      "Javanile\\Eventy\\": "src/"
     }
   },
   "autoload-dev": {

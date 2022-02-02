@@ -1,6 +1,6 @@
 <?php
 
-namespace TorMorten\Eventy;
+namespace Javanile\Eventy;
 
 class Filter extends Event
 {

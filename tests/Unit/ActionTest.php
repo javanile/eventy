@@ -3,7 +3,7 @@
 namespace EventyTests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use TorMorten\Eventy\Events;
+use Javanile\Eventy\Events;
 
 class ActionTest extends TestCase
 {

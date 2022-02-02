@@ -3,8 +3,8 @@
 namespace EventyTests\Unit;
 
 use PHPUnit\Framework\TestCase;
-use TorMorten\Eventy\Events;
-use TorMorten\Eventy\HashedCallable;
+use Javanile\Eventy\Events;
+use Javanile\Eventy\HashedCallable;
 
 class HashedCallableTest extends TestCase
 {
