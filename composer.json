@@ -2,7 +2,7 @@
   "name": "javanile/eventy",
   "description": "The WordPress filter/action system in Laravel",
   "keywords": [
-    "laravel",
+    "vtiger",
     "wordpress",
     "action",
     "events",
