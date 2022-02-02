@@ -9,7 +9,7 @@
     <a href='https://coveralls.io/github/tormjens/eventy?branch=master'><img src='https://coveralls.io/repos/github/tormjens/eventy/badge.svg?branch=master' alt='Coverage Status' /></a>
 </p>
 
-Actions and filters in Laravel. WordPress-style.
+Actions and filters in Vtiger. WordPress-style.
 
 Eventy (for lack of a better name) is a simple action and filter (or hooks if you like) system.
 
