@@ -1,6 +1,7 @@
 
 
 update:
+	rm -fr vendor
 	composer update
 
 test:
