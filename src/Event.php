@@ -107,10 +107,11 @@ abstract class Event
     {
         if (is_string($callback) && strpos($callback, '@')) {
             $callback = explode('@', $callback);
-
-            return [app('\\'.$callback[0]), $callback[1]];
-        } elseif (is_string($callback)) {
-            return [app('\\'.$callback), 'handle'];
+            throw new \Exception('$callback needs dependencies injection', 1);
+            //return [app('\\'.$callback[0]), $callback[1]];
+        } elseif (is_string($callback) && !strpos($callback, '::')) {
+            throw new \Exception('$callback needs dependencies injection', 1);
+            //return [app('\\'.$callback), 'handle'];
         } elseif (is_callable($callback)) {
             return $callback;
         } elseif (is_array($callback)) {
